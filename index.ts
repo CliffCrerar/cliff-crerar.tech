@@ -6,12 +6,16 @@ import './style.scss';
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `
 <main class="main">
-  <div>
-    <h1>TypeScript Starter</h1>
+  <div class="skewdivs">
+    <div class="straightened">
+      <h1>TypeScript Starter</h1>
+    </div>
   </div>
 
-  <div>
-    
-  <div>
+  <div class="skewdivs">
+    <div class="straightened">
+      
+    </div>
+  </div>
 </main>
 `;
