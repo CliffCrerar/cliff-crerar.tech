@@ -1,0 +1,26 @@
+html, body{
+  height: 100vh;
+}
+
+.main{
+  $skx:0deg;
+  $sky:0deg;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  height: 100vh;
+
+  div {
+    // transform: skew($skewx,$skewy)
+    transform: skew($skx,$sky);
+  }
+  div:first-child {
+    background: blue;
+    flex: 1;
+  }
+  div:last-child{
+    background: red;
+    flex: 1;
+  }
+}
