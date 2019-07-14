@@ -1,7 +1,7 @@
 {
-    "name": "Webpack-boiler",
+    "name": "gate-way-page",
     "version": "0.5.0",
-    "description": "For evaluating fonts added from google fonts",
+    "description": "Gateway to all my web publications",
     "private": true,
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
