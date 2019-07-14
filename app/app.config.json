@@ -1,0 +1,11 @@
+{
+	"Application Name": "WebPack Boiler",
+	"Page title": "Starter App",
+	"Directories": {
+		"entry": "app/app.js",
+		"public": "app/public"
+	},
+	"publicPath": "/",
+	"mode": "development",
+	"Global Variables": []
+}

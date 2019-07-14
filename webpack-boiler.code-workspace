@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Users/cliffordcrerar/myworkspace/gateway-page"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {},
+		"cSpell.words": [
+			"crossorigin"
+		],
+		"git.ignoreLimitWarning": true,
+		"better-comments.highlightPlainText": true,
+		"jsFileHeader.Author": "Cliff Crerar",
+		"workbench.colorTheme": "Monokai"
+	}
+}
