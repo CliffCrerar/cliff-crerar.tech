@@ -1,0 +1,8 @@
+.skewdiv {
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    transform-origin: top left;
+    transform: skew(-15deg);
+    z-index: 0;
+}

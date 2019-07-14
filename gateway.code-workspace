@@ -15,6 +15,11 @@
 		"git.ignoreLimitWarning": true,
 		"better-comments.highlightPlainText": true,
 		"jsFileHeader.Author": "Cliff Crerar",
-		"workbench.colorTheme": "Monokai"
+		"workbench.colorTheme": "Monokai",
+		"liveServer.settings.root": "/dist",
+		"liveServer.settings.useLocalIp": true,
+		"liveServer.settings.wait": 100,
+		"liveServer.settings.port": 5500,
+		"liveServer.settings.fullReload": true
 	}
 }
