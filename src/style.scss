@@ -1,3 +1,22 @@
+//@import url('https://fonts.googleapis.com/css?family=Alfa Slab One|Allerta Stencil|Averia Libre|DM Sans|DM Serif Display|Damion|Days One|Khand|Mitr|Squada One&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Nanum+Gothic|Prosto+One|Quicksand|Racing+Sans+One&display=swap');
+
+/*
+
+Alfa Slab One
+Allerta Stencil
+Averia Libre
+DM Sans
+DM Serif Display
+Damion
+Days One
+Khand
+Mitr
+Squada One
+
+*/
+
+@import './colors.scss';
 html,
 body {
     box-sizing: border-box;
@@ -7,12 +26,79 @@ body {
     height: auto;
     width: 100vw;
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
+h1 {
+    font-family: Racing Sans One;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px black;
+    color: $text-primary;
+}
+
+h2,
+h3 {
+    text-shadow: 1px 1px 3px black;
+    color: $text-secondary;
+}
+
+h4 {
+    text-shadow: 1px 1px 3px black;
+    color: $text-secondary;
+}
+
+a {
+    text-decoration: none;
+    color: $text-accent;
+}
+
+p {
+    color: $text-secondary;
+    font-family: Oswald;
+    text-shadow: 1px 1px 2px black;
+}
+
+hr {
+    text-shadow: 1px 1px 3px black;
+    color: $text-secondary;
+}
+
+main {
+    background: $secondary-transparent;
+}
+
 .skewdiv {
-    background: rgba(0, 0, 255, 0.486);
+    background: $primary-transparent;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 7px 30px;
+    background: $text-accent;
+    color: $text-primary;
+    border: solid 1px $text-primary;
+    border-radius: 4px;
+    font-weight: bold;
+    animation: 1s ease-in;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background: $text-primary;
+        color: $secondary;
+        border: solid 1px $secondary;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: grey !important;
 }

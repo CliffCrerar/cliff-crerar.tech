@@ -1,0 +1,102 @@
+@import '../colors.scss';
+.content-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: Center;
+    section {
+        min-width: 414px;
+        &.page-subject {
+            // background: rgba(255, 0, 0, 0.3);
+            flex: 1;
+            padding: 0 10vw;
+        }
+        &.page-options {
+            // background: rgba(0, 128, 0, 0.3);
+            padding: 0 10vw;
+            flex: 1;
+        }
+    }
+}
+
+
+/*
+
+Alfa Slab One
+*Allerta Stencil
+Averia Libre
+*DM Sans
+*DM Serif Display
+Damion
+*Days One
+*Khand
+*Mitr
+Squada One
+
+
+Encode Sans
+Nanum Gothic
+Prosto One
+Quicksand
+Racing Sans One
+
+*/
+
+.subject {
+    .name {
+        font-family: Racing Sans One;
+        font-size: 3em;
+        letter-spacing: 5px;
+        span {
+            color: $text-accent;
+        }
+    }
+    .position {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0 5px 0 0;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    h2,
+    h3,
+    h4 {
+        font-family: Khand;
+    }
+}
+
+.options {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    h1 {
+        font-size: 2.5em;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            margin: 10px;
+            padding: 10px;
+            a {
+                font-size: 2em;
+                font-family: Oswald
+            }
+        }
+    }
+}
