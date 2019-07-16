@@ -1,5 +1,7 @@
 {
     "version": 2,
+    "name": "st-web-gateway",
+    "alias": "cliff-crerar.tech",
     "builds": [{
         "src": "package.json",
         "use": "@now/static-build",
