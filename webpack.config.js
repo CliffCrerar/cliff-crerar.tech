@@ -44,8 +44,8 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new ManifestPlugin(),
 		new HtmlWebpackPlugin( {
-			title: config['Page title'],
-			template: path.resolve( __dirname, config.Directories.public, 'index.html' )
+			template: path.resolve( __dirname, config.Directories.public, 'index.html' ),
+			favicon: "./favicon.ico"
 		} ),
 		new webpack.EnvironmentPlugin( {
 			// define environment vars

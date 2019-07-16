@@ -1,4 +1,4 @@
-@import '../colors.scss';
+@import '../variables.scss';
 .content-container {
     position: relative;
     min-height: 100vh;
@@ -22,32 +22,9 @@
     }
 }
 
-
-/*
-
-Alfa Slab One
-*Allerta Stencil
-Averia Libre
-*DM Sans
-*DM Serif Display
-Damion
-*Days One
-*Khand
-*Mitr
-Squada One
-
-
-Encode Sans
-Nanum Gothic
-Prosto One
-Quicksand
-Racing Sans One
-
-*/
-
 .subject {
     .name {
-        font-family: Racing Sans One;
+        font-family: $font-main;
         font-size: 3em;
         letter-spacing: 5px;
         span {
@@ -73,7 +50,7 @@ Racing Sans One
     h2,
     h3,
     h4 {
-        font-family: Khand;
+        font-family: $fony-sub-headings;
     }
 }
 

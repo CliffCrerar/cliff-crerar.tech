@@ -16,7 +16,7 @@ Squada One
 
 */
 
-@import './colors.scss';
+@import './variables.scss';
 html,
 body {
     box-sizing: border-box;
@@ -37,7 +37,7 @@ h3 {
 }
 
 h1 {
-    font-family: Racing Sans One;
+    font-family: $font-main;
     font-size: 2em;
     text-shadow: 1px 1px 3px black;
     color: $text-primary;
