@@ -14,3 +14,9 @@
     z-index: -1;
     background: url('../../public/bg-temp.png') top left / auto 120% no-repeat
 }
+
+@media only screen and (max-width: 414px){
+	.video-background{
+		display: none;
+	}
+}

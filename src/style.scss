@@ -30,6 +30,13 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (max-width: 414px){
+	html,
+	body {
+		overflow-y: scroll;
+	}
+}
+
 h1,
 h2,
 h3 {
