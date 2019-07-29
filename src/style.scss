@@ -41,6 +41,7 @@ h1,
 h2,
 h3 {
     margin: 0;
+    font-family: $font-main;
 }
 
 h1 {
@@ -70,6 +71,21 @@ p {
     color: $text-secondary;
     font-family: Oswald;
     text-shadow: 1px 1px 2px black;
+}
+
+blockquote{
+    font-family: $font-sub-headings;
+    font-size: 1.2em;
+    color: $text-primary;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px 10px 30px;
+    border-left: 3px solid $text-primary;  
+    
+}
+
+small{
+    font-family: $font-sub-text;
+    color: $font-sub-text;
 }
 
 hr {
@@ -108,4 +124,36 @@ main {
     pointer-events: none;
     cursor: not-allowed;
     color: grey !important;
+}
+
+.quoteSmallClass{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.quoteSmallClass a {
+    font-size: 1.2em;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.quoteSmallClass a:hover{
+    color: $text-secondary !important;
+}
+
+.quoteSmallClass .link{
+    text-align: right;
+}
+
+.quoteSmallClass div{
+    position: relative;
+    min-width: 118px;
+    flex: 1;
+}
+
+.nav-links a:hover{
+    color: $text-primary;
 }

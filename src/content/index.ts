@@ -8,10 +8,12 @@ import about from './sub-content/about.md';
 const md = markdown.parse(about)[1][1];
 console.log('md: ', md);
 
+const populatemarkdown = false;
+
 const contentPage = content
 	.replace('{{page-subject}}', subject)
 	.replace('{{page-options}}', options)
-	.replace('{{about}}', md);
+	.replace('{{about}}', populatemarkdown ? md : '<div id="quote"></div>');
 
 export default () => {
 	const container = document.createElement('div');

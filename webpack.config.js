@@ -5,7 +5,12 @@ const CleanWebpackPlugin = require( 'clean-webpack-plugin' );
 const ManifestPlugin = require( 'webpack-manifest-plugin' );
 const webpack = require( 'webpack' );
 
-module.exports = {
+console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
+
+module.exports = (env)=>{
+	console.log('env',env);
+	const development = env.NODE_ENV==='development'
+	return{
 	mode: config.mode,
 	entry: path.resolve( __dirname, config.Directories.entry ),
 	module: {
@@ -52,11 +57,15 @@ module.exports = {
 		} ),
 		new webpack.HotModuleReplacementPlugin( {
 			// Options...
-		} )
+		} ),
+		new webpack.DefinePlugin({'process.env.NODE_ENV':JSON.stringify(env.NODE_ENV)}),
+		new webpack.EnvironmentPlugin({
+			DEV: development
+		})
 	],
 	output: {
 		filename: '[name].source.js',
 		path: path.resolve( __dirname, 'dist' ),
 		publicPath: config.publicPath
 	}
-};
+}};
