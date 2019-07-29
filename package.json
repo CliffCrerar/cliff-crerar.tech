@@ -1,6 +1,6 @@
 {
     "name": "gate-way-page",
-    "version": "0.5.0",
+    "version": "1.1.0",
     "description": "Gateway to all my web publications",
     "private": true,
     "scripts": {

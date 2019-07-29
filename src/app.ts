@@ -3,12 +3,8 @@ import './style.scss';
 import splitview from "./splitview";
 import videobg from './videobg';
 import content from './content';
-import './api'
-
-
-
-console.log('process: ', process.env.DEV);
-console.log('process: ', process.env);
+import './api';
+import './showdev';
 
 const app = document.createElement('main');
 

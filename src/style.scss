@@ -1,6 +1,8 @@
 //@import url('https://fonts.googleapis.com/css?family=Alfa Slab One|Allerta Stencil|Averia Libre|DM Sans|DM Serif Display|Damion|Days One|Khand|Mitr|Squada One&display=swap');
 //@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Nanum+Gothic|Prosto+One|Quicksand|Racing+Sans+One&display=swap');
 
+
+
 /*
 
 Alfa Slab One
@@ -17,6 +19,14 @@ Squada One
 */
 
 @import './variables.scss';
+
+.devDisplay{
+    position: absolute;
+    color: $text-accent;
+    bottom: 10%;
+    right: 10%;
+}
+
 html,
 body {
     box-sizing: border-box;
