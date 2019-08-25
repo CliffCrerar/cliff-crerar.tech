@@ -2,7 +2,7 @@
 import './style.scss';
 import splitview from "./splitview";
 import videobg from './videobg';
-import content from './content';
+import content from './_page-content';
 import './api';
 import './showdev';
 

@@ -52,6 +52,10 @@ module.exports = (env)=>{
 			template: path.resolve( __dirname, config.Directories.public, 'index.html' ),
 			favicon: "./favicon.ico"
 		} ),
+		new HtmlWebpackPlugin( {
+			template: path.resolve( __dirname, config.Directories.public, 'index.html' ),
+			favicon: "./favicon.ico"
+		} ),
 		new webpack.EnvironmentPlugin( {
 			// define environment vars
 		} ),
