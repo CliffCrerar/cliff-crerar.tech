@@ -8,9 +8,5 @@
         "config": {
             "distDir": "dist"
         }
-    }, {
-        "src": "./google-verif/google7b834083c3066471.html",
-        "use": "@now/static-build"
-
     }]
 }

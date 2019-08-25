@@ -11,6 +11,7 @@ const app = document.createElement('main');
 app.appendChild(videobg())
 app.appendChild(splitview());
 app.appendChild(content());
+app.appendChild('<a href=""')
 
 document.body.appendChild(app);
 !process.env.DEV && googleScr();
