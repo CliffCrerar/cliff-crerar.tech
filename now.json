@@ -11,9 +11,9 @@
     }],
     "routes": [{
         "src": "/privacy",
-        "dest": "https://policies.cliff-crerar.tech/portal-privacy"
+        "dest": "https://policies.cliff-crerar.tech/portal-privacy/index.html"
     }, {
         "src": "/terms",
-        "dest": "https://policies.cliff-crerar.tech/portal-terms"
+        "dest": "https://policies.cliff-crerar.tech/portal-terms/index.html"
     }]
 }
