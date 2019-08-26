@@ -8,5 +8,12 @@
         "config": {
             "distDir": "dist"
         }
+    }],
+    "routes": [{
+        "src": "/privacy",
+        "dest": "https://policies.cliff-crerar.tech/portal-privacy"
+    }, {
+        "src": "/terms",
+        "dest": "https://policies.cliff-crerar.tech/portal-terms"
     }]
 }
