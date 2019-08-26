@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "st-web-gateway",
+    "name": "portal-page",
     "alias": "cliff-crerar.tech",
     "builds": [{
         "src": "package.json",
