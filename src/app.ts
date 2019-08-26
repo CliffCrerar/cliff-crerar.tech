@@ -3,17 +3,21 @@ import './style.scss';
 import splitview from "./splitview";
 import videobg from './videobg';
 import content from './_page-content';
+import policies from './footer';
 import './api';
 import './showdev';
 
 const app = document.createElement('main');
 
-app.appendChild(videobg())
+
+//app.appendChild(videobg())
 app.appendChild(splitview());
 app.appendChild(content());
-app.appendChild('<a href=""')
+
+
 
 document.body.appendChild(app);
+document.body.appendChild(policies());
 !process.env.DEV && googleScr();
 function googleScr(){
     var gscr = document.querySelector('#googleScr');
