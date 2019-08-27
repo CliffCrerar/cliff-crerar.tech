@@ -38,7 +38,7 @@ body {
     min-height: 100vh;
     height: auto;
     width: 100vw;
-    overflow-y: hidden;
+    overflow: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -104,8 +104,6 @@ hr {
     text-shadow: 1px 1px 3px black;
     color: $text-secondary;
 }
-
-main {}
 
 .main-overlay {
     background: $secondary-transparent;
