@@ -1,26 +1,16 @@
 import './footer.scss';
 
-
-
-
+const terms = "https://policies.cliff-crerar.tech/portal-terms"
+const privacy = "https://policies.cliff-crerar.tech/portal-privacy"
 
 export default () => {
-
-    const footer = document.createElement('footer');
-    const policies = document.createElement('div');
-    const anchor = document.createElement('a');
-    const privacy = anchor.cloneNode();
-    const terms = anchor.cloneNode();
-
-    footer.appendChild(policies);
-
-    policies.classList.add("policies");
-    
-    policies.innerHTML = '<h1>policies</h1>';
-
-    console.log('terms: ', terms);
-
-    console.log('privacy: ', privacy);
-
-    return footer;
+    return `
+        <div class="footer">
+            
+        <span><a class="policies" href="${privacy}">Privacy Policy</a></span>
+        <span><|></span>
+        <span><a class="policies" href="${terms}">Terms of use</a></span>
+        
+        </div>
+    `
 }

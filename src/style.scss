@@ -1,8 +1,6 @@
 //@import url('https://fonts.googleapis.com/css?family=Alfa Slab One|Allerta Stencil|Averia Libre|DM Sans|DM Serif Display|Damion|Days One|Khand|Mitr|Squada One&display=swap');
 //@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Nanum+Gothic|Prosto+One|Quicksand|Racing+Sans+One&display=swap');
 
-
-
 /*
 
 Alfa Slab One
@@ -19,12 +17,17 @@ Squada One
 */
 
 @import './variables.scss';
-
-.devDisplay{
+.devDisplay {
     position: absolute;
     color: $text-accent;
     bottom: 10%;
     right: 10%;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 html,
@@ -40,11 +43,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media only screen and (max-width: 414px){
-	html,
-	body {
-		overflow-y: scroll;
-	}
+@media only screen and (max-width: 414px) {
+    html,
+    body {
+        overflow-y: scroll;
+    }
 }
 
 h1,
@@ -83,17 +86,16 @@ p {
     text-shadow: 1px 1px 2px black;
 }
 
-blockquote{
+blockquote {
     font-family: $font-sub-headings;
     font-size: 1.2em;
     color: $text-primary;
     background: rgba(0, 0, 0, 0.4);
     padding: 10px 20px 10px 30px;
-    border-left: 3px solid $text-primary;  
-    
+    border-left: 3px solid $text-primary;
 }
 
-small{
+small {
     font-family: $font-sub-text;
     color: $font-sub-text;
 }
@@ -103,7 +105,9 @@ hr {
     color: $text-secondary;
 }
 
-main {
+main {}
+
+.main-overlay {
     background: $secondary-transparent;
 }
 
@@ -136,7 +140,7 @@ main {
     color: grey !important;
 }
 
-.quoteSmallClass{
+.quoteSmallClass {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -151,20 +155,20 @@ main {
     width: 100%;
 }
 
-.quoteSmallClass a:hover{
+.quoteSmallClass a:hover {
     color: $text-secondary !important;
 }
 
-.quoteSmallClass .link{
+.quoteSmallClass .link {
     text-align: right;
 }
 
-.quoteSmallClass div{
+.quoteSmallClass div {
     position: relative;
     min-width: 118px;
     flex: 1;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     color: $text-primary;
 }

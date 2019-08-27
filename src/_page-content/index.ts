@@ -2,18 +2,20 @@ import { markdown } from 'markdown'
 import './content.scss';
 import content from './content.html';
 import subject from './sub-content/page-subject.html';
-import options from './sub-content/page-options.html';
-import about from './sub-content/about.md';
+import callQuoteApi from '../api';
 
-const md = markdown.parse(about)[1][1];
-console.log('md: ', md);
+// import about from './sub-content/about.md';
 
-const populatemarkdown = false;
+// const md = markdown.parse(about)[1][1];
+// console.log('md: ', md);
+
+// const populatemarkdown = false;
 
 const contentPage = content
 	.replace('{{page-subject}}', subject)
-	.replace('{{page-options}}', options)
-	.replace('{{about}}', populatemarkdown ? md : '<div id="quote"></div>');
+	.replace('{{page-quote}}','<div id="quote"></div>');
+
+	callQuoteApi();
 
 export default () => {
 	const container = document.createElement('div');

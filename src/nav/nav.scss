@@ -1,0 +1,53 @@
+.options {
+    position: relative;
+    top: 0;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    h1 {
+        font-size: 2.5em;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            margin: 10px;
+            padding: 10px;
+            a {
+                font-size: 2em;
+                font-family: Oswald
+            }
+        }
+    }
+}
+
+.options ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+@media only screen and (max-width: 414px) {
+    .page-options {
+        transform: scale(0.7);
+        p {
+            text-align: center;
+            transform: scale(1.7);
+        }
+    }
+    .options {
+        position: relative;
+        ul {
+            display: block;
+            transform: skew(-10deg)
+        }
+        background: #FAFAFA;
+        padding: 10px 40px 10px 40px;
+        transform: skew(10deg) translate(-50px);
+        border-radius: 7px;
+        margin-bottom: 150px;
+        box-shadow: 3px 3px 10px black;
+    }
+}

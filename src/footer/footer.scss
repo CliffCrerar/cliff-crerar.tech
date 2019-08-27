@@ -1,11 +1,14 @@
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    z-index: 10;
-    height: 10%;
-    justify-content: center;
+    color: #f44336;
+    padding: 5vh;
+    text-align: center;
+    width: 100%;
+    font-family: Racing Sans One;
+    font-size: 1.2em;
 }
 
-.policies {
+.policies:hover {
     color: white;
 }
