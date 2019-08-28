@@ -25,6 +25,25 @@
     <meta name="google-site-verification" content="51VtZGI7RZSUbaOnf6rgGQ8glGdxEbzny-vLIKnbBwg" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143913069-1"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KRHTS6K');
+    </script>
+    <!-- End Google Tag Manager -->
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -52,8 +71,12 @@
 </head>
 
 <body>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d2d2f0179caad2d"></script>
+    <div id="page-loader"></div>
+    <div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d2d2f0179caad2d"></script>
+    </div>
+
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 
+import './loader';
 import './style.scss';
 import './variables.scss';
 import nav from './nav'
@@ -7,6 +8,7 @@ import videobg from './videobg';
 import content from './_page-content';
 import policies from './footer';
 import './showdev';
+import './loader';
 
 const {header,main,footer,bgMatter} = (() =>{
     const header = document.createElement('header');

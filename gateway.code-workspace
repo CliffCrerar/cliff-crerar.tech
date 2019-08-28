@@ -7,7 +7,13 @@
 			"path": "/Volumes/AWS-S3/cdn-cloudflare.ga"
 		},
 		{
-			"path": "/Users/cliff/git/vanilla"
+			"path": "/Users/cliff/git/gl-pdf-resume"
+		},
+		{
+			"path": "/Users/cliff/dev-docz"
+		},
+		{
+			"path": "/Users/cliff/git/DEV-server"
 		}
 	],
 	"settings": {
