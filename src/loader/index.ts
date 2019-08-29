@@ -16,6 +16,6 @@ var loaderHtml = `
 var body = document.getElementById('page-loader');
 
 var inner = document.getElementById('page-loader');
+inner.innerHTML = loaderHtml;
 
-setTimeout(()=>{inner.remove()},
-20000)
+setTimeout(()=>{inner.classList.add('fadeOut')},2000)
