@@ -1,7 +1,5 @@
 import './videobg.scss'
 
-console.log('process.env: ', process.env);
-
 const bgVids = [{
 	video: "jet",
 	prodFrame: `
