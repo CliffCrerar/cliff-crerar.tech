@@ -3,7 +3,7 @@
     position: relative;
     top: 100px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-around;
     align-content: stretch;
     align-items: Center;
@@ -61,6 +61,9 @@ h4 {
 }
 
 @media only screen and (max-width: 414px) {
+    .content-container {
+        flex-flow: row wrap;
+    }
     &.page-subject {
         position: relative;
         // background: rgba(255, 0, 0, 0.3);
