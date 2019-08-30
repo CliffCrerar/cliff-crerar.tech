@@ -1,8 +1,8 @@
-import { markdown } from 'markdown'
+// import { markdown } from 'markdown'
 import './content.scss';
 import content from './content.html';
 import subject from './sub-content/page-subject.html';
-import callQuoteApi from '../api';
+import callQuoteApi from '../quote';
 
 // import about from './sub-content/about.md';
 

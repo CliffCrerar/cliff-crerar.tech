@@ -4,7 +4,7 @@
 			"path": "."
 		},
 		{
-			"path": "/Volumes/AWS-S3/cdn-cloudflare.ga"
+			"path": "/Volumes/cdn-cloudflare.ga"
 		},
 		{
 			"path": "/Users/cliff/git/gl-typepdf-resume"
@@ -27,7 +27,7 @@
 		"git.ignoreLimitWarning": true,
 		"better-comments.highlightPlainText": true,
 		"jsFileHeader.Author": "Cliff Crerar",
-		"workbench.colorTheme": "MacOS Modern Light - Xcode Default",
+		"workbench.colorTheme": "Eva Light Bold",
 		"liveServer.settings.root": "/dist",
 		// "liveServer.settings.useLocalIp": true,
 		"liveServer.settings.wait": 100,
