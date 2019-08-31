@@ -71,14 +71,14 @@ h4 {
         padding: 0 0;
         transform: scale(0.7);
     }
-    // .page-options {
-    //     transform: scale(0.7);
-    //     p {
-    //         text-align: center;
-    //         transform: scale(1.7);
-    //     }
-    // }
-    .subject {
+    .page-quote {
+        transform: scale(0.7);
+        p {
+            text-align: center;
+            transform: scale(1.7);
+        }
+    }
+    .quote {
         &h1 {
             word-wrap: break-word;
             font-size: 1em !important;
@@ -92,22 +92,4 @@ h4 {
             word-wrap: break-word;
         }
     }
-    // .options {
-    //     position: relative;
-    //     ul {
-    //         display: block;
-    //         transform: skew(-10deg)
-    //     }
-    //     background: #FAFAFA;
-    //     padding: 10px 40px 10px 40px;
-    //     transform: skew(10deg) translate(-50px);
-    //     border-radius: 7px;
-    //     margin-bottom: 150px;
-    //     box-shadow: 3px 3px 10px black;
-    // }
-    // .page-options {
-    //     p {
-    //         background: $primary-transparent;
-    //     }
-    // }
 }

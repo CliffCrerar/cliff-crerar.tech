@@ -29,6 +29,31 @@
     list-style: none;
 }
 
+.options-mobile {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+}
+
+.nav-links-mobile-container {
+    position: relative;
+    padding: 5vw;
+    background: #212121;
+    z-index: 3000;
+}
+
+mobile-links {}
+
+.nav-links-mobile li {
+    line-height: 40px;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+.burger-icon-btn {
+    background: #fafafa;
+}
+
 @media only screen and (max-width: 414px) {
     .page-options {
         transform: scale(0.7);
@@ -38,17 +63,11 @@
         }
     }
     .options {
-        position: relative;
-        ul {
-            display: block;
-            transform: skew(-10deg)
-        }
-        background: #FAFAFA;
-        padding: 10px 40px 10px 40px;
-        transform: skew(10deg) translate(-50px);
-        border-radius: 7px;
-        margin-bottom: 150px;
-        box-shadow: 3px 3px 10px black;
+        display: none;
+    }
+    .options-mobile {
+        display: block;
+        color: white;
     }
 }
 
