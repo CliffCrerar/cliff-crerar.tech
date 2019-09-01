@@ -4,7 +4,7 @@ const bgVids = [{
 	video: "jet",
 	prodFrame: `
 		<video class="video-iframe" muted autoplay loop>
-  			<source src="https://cdn-cloudflare.ga/videoassets/jet-background.mp4" type="video/mp4">
+  			<source src="https://cdn-cloudflare.ga/assets/background-videos/jet-background.mp4" type="video/mp4">
   			Your browser does not support the video tag.
 		</video>
 		`,
@@ -15,7 +15,7 @@ const bgVids = [{
 	video: "typing",
 	prodFrame: `
 		<video class="video-iframe" muted autoplay loop>
-		<source src="https://s3-eu-west-1.amazonaws.com/cdn-aws-infinityarc.tk/videoassets/typing.mp4" type="video/mp4">
+		<source src="https://cdn-cloudflare.ga/assets/background-videos/typing.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 	  </video>
 		`,

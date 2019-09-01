@@ -50,7 +50,8 @@ module.exports = (env) => {
 			new ManifestPlugin(),
 			new HtmlWebpackPlugin({
 				template: path.resolve(__dirname, config.Directories.public, 'index.html'),
-				favicon: "./favicon.ico"
+				favicon: "./favicon.png"
+				// favicon: "https://cdn-cloudflare.ga/assets/own-logo/Own-icon-5.png"
 			}),
 			new webpack.EnvironmentPlugin({
 				// define environment vars
