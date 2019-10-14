@@ -2,19 +2,13 @@
 /**
  * Social links
  */
-
-
-
 interface iSocialLinks {
     name: string,
-    link: string    
-    
+    link: string        
 }
-
 function getImg(imgName: string): string {
     return require(require('path').join(__dirname, '../../_assets', imgName+'.svg'));
 }
-
 const baseUrl: string = 'https://cdn-cloudflare.ga/assets/social-icons';
 const socialLinks: iSocialLinks[] = [
     { name: 'linkedIn', link: 'https://www.linkedin.com/in/cliff-crerar/'},

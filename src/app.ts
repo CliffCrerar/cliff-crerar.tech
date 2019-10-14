@@ -1,16 +1,36 @@
 
 /// <reference path="html.d.ts" />
 /// <reference path="svg.d.ts" />
+
+import './nodeMods'
 import './loader';
 import './style.scss';
 import './variables.scss';
+import './showdev/index';
+import './loader';
+// import win from './window';
 import nav from './nav/index'
 import splitview from "./splitview/index";
 import videobg from './videobg/index';
 import content from './_page-content/index';
 import policies from './footer/index';
-import './showdev/index';
-import './loader';
+import callQuoteApi from './quote/index';
+
+
+interface iIsMobile{
+    isMobile: boolean;
+}
+
+class window implements iIsMobile{
+    constructor(
+        public isMobile: boolean
+    ){
+
+    }
+}
+
+console.log(window);
+
 
 const {header,main,footer,bgMatter} = (() =>{
     const header = document.createElement('header');
@@ -24,11 +44,28 @@ const {header,main,footer,bgMatter} = (() =>{
     return {header,main,footer,bgMatter}
 })();
 
-bgMatter.style.position = 'absolute';
-bgMatter.style.minHeight = '100vh';
-bgMatter.style.width = '100vw';
-bgMatter.appendChild(videobg());
-bgMatter.appendChild(splitview());
-header.appendChild(nav);
-main.appendChild(content());
-footer.innerHTML = policies();
+function desktop(){
+    bgMatter.style.position = 'absolute';
+    bgMatter.style.minHeight = '100vh';
+    bgMatter.style.width = '100vw';
+    bgMatter.appendChild(videobg());
+    bgMatter.appendChild(splitview());
+    header.appendChild(nav);
+    main.appendChild(content());
+    footer.innerHTML = policies();
+    callQuoteApi();
+}
+
+function mobile(){
+    require('./__modbileSite')(main);
+}
+
+if(window.isMobile){
+    console.log('load mobile');
+    mobile()
+} else {
+    desktop();
+}
+
+
+console.log();

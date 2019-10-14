@@ -13,9 +13,5 @@ function buildLink(itm: iSocialLinks, idx: number):HTMLLIElement{
     return listItem;
 }
 linksContainer.appendChild(list);
-socialLinks.map((itm, idx) => {
-    console.log('index: ', itm);
-    console.log('value: ', idx);
-    return buildLink(itm, idx);
-}).forEach(itm=>list.appendChild(itm));
+socialLinks.map((itm, idx) => buildLink(itm, idx)).forEach(itm=>list.appendChild(itm));
 export default linksContainer.innerHTML;
