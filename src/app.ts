@@ -21,13 +21,9 @@ interface iIsMobile{
     isMobile: boolean;
 }
 
-class window implements iIsMobile{
-    constructor(
-        public isMobile: boolean
-    ){
-
-    }
-}
+// class extWin extends window implements iIsMobile {
+//     isMobile: boolean;
+// }
 
 console.log(window);
 
