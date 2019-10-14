@@ -1,25 +1,70 @@
+
+
+@import '../../node_modules//@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
 @import '../variables.scss';
 .content-container {
     position: relative;
-    top: 100px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: stretch;
-    align-items: Center;
-    section {
-        min-width: 414px;
-        &.page-subject {
-            // background: rgba(255, 0, 0, 0.3);
-            flex: 1;
-            padding: 0 10vw;
-        }
-        &.page-quote {
-            // background: rgba(0, 128, 0, 0.3);
-            padding: 0 10vw;
-            flex: 1;
+    .inline-container{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-content: stretch;
+        align-items: Center;
+        section {
+            min-width: 414px;
+            &.page-subject {
+                // background: rgba(255, 0, 0, 0.3);
+                flex: 1;
+                padding: 0 10vw;
+            }
+            &.page-quote {
+                // background: rgba(0, 128, 0, 0.3);
+                padding: 0 10vw;
+                flex: 1;
+            }
         }
     }
+    .social-links{
+        position: relative;
+        margin-top: 5vh;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            li{
+                height: auto;
+                a{
+                    height: auto;
+                    $dropShad: drop-shadow(5px 5px 2px rgba(0,0,0,0.7));      
+                    svg{
+                        height: 7vh;
+                        color: $text-accent;
+                        -webkit-filter: $dropShad;
+                        filter: $dropShad;
+                        &:hover{
+                            color: rgb(173, 173, 173);
+                            transform: scale(1.2);
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+    .calendly-box{
+        margin-top: 5vh;
+        text-align: center;
+        a{
+            display: block;
+            img:hover{
+                transform: scale(1.2);
+
+            }
+        }
+    }
+
 }
 
 .subject {

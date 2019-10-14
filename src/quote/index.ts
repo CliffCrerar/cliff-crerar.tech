@@ -11,7 +11,7 @@ function callQuoteApi(){
     })
     .then(quoteObject=>populate(quoteObject));
     
-    function populate(q){
+    function populate(q:any){
         const quoteContainer = document.getElementById('quote')
         var quote = q.contents.quotes[0];
         var quoteCopyright = q.contents.copyright;

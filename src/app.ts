@@ -1,13 +1,15 @@
 
+/// <reference path="html.d.ts" />
+/// <reference path="svg.d.ts" />
 import './loader';
 import './style.scss';
 import './variables.scss';
-import nav from './nav'
-import splitview from "./splitview";
-import videobg from './videobg';
-import content from './_page-content';
-import policies from './footer';
-import './showdev';
+import nav from './nav/index'
+import splitview from "./splitview/index";
+import videobg from './videobg/index';
+import content from './_page-content/index';
+import policies from './footer/index';
+import './showdev/index';
 import './loader';
 
 const {header,main,footer,bgMatter} = (() =>{

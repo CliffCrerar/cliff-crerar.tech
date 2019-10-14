@@ -13,8 +13,14 @@ module.exports = (env) => {
 	return {
 		mode: config.mode,
 		entry: path.resolve(__dirname, config.Directories.entry),
+		devtool: 'inline-source-map',
 		module: {
 			rules: [
+				{
+					test: /\.tsx?$/,
+					use: 'ts-loader',
+					exclude: /node_modules/,
+				  },
 				{
 					test: /\.scss$/,
 					use: [
@@ -23,8 +29,12 @@ module.exports = (env) => {
 						"sass-loader" // compiles Sass to CSS, using Node Sass by default
 					]
 				},
+				{
+					test: /\.svg$/,
+					loader: 'svg-inline-loader'
+				},
 				{ test: /\.css$/, use: ['style-loader', 'css-loader'] }, // css loader
-				{ test: /\.(png|svg|jpg|gif)$/, use: ['file-loader'] }, // file loader
+				{ test: /\.(png|jpg|gif)$/, use: ['file-loader'] }, // file loader
 				{ test: /\.(woff|woff2|eot|ttf|otf)$/, use: ['file-loader'] }, // font loader
 				{ test: /\.(csv|tsv)$/, use: ['csv-loader'] }, // csv loader
 				{ test: /\.xml$/, use: ['xml-loader'] }, // xml loader
