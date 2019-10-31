@@ -63,13 +63,10 @@ module.exports = (env) => {
 				favicon: "./favicon.png"
 				// favicon: "https://cdn-cloudflare.ga/assets/own-logo/Own-icon-5.png"
 			}),
-			new webpack.EnvironmentPlugin({
-				// define environment vars
-			}),
 			new webpack.HotModuleReplacementPlugin({
 				// Options...
 			}),
-			new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV) }),
+			// new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV) }),
 			new webpack.EnvironmentPlugin({
 				DEV: development
 			})
