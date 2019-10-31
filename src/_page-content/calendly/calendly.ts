@@ -6,7 +6,7 @@ export default `
         a:hover p,a:hover img{
             transform: scale(1.2);
         }
-        calendly-button{
+        .calendly-button{
             background: transparent !important;
             border: 0px transparent !important;
         }
