@@ -138,10 +138,20 @@ hr {
     }
 }
 
-.disabled {
+.disabled a {
     pointer-events: none;
-    cursor: not-allowed;
-    color: grey !important;
+    color: rgba(128, 128, 128, 0.5) !important;
+
+}
+
+
+.disabled:hover{
+    cursor: not-allowed !important;
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
 }
 
 .quoteSmallClass {
