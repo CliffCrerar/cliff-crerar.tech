@@ -1,28 +1,28 @@
-export default `
-    <style>
-        p{
-            float: center;
-        }
-        a:hover p,a:hover img{
-            transform: scale(1.2);
-        }
-        .calendly-button{
-            background: transparent !important;
-            border: 0px transparent !important;
-        }
-    </style>
-    <div class="calendly-box">
-    <button class="calendly-button">
-        <a href="https://calendly.com/cliff-crerar/session-with-dev" target="blank">
-            <img 
-            style="height: 100px; width: 100px" 
-            src="${require('../../_assets/calendly-1.png')}" 
-            alt="calendly">
-            <p style="font-size: 1.5em">Make an appointment</p>
-        </a>
-    </button>
-    </div>
-`
+import './style.scss';
+import html from './calendly.html';
+
+const img = require('../../_assets/calendly3.png');
+const link = 'https://calendly.com/cliff-crerar/session-with-dev';
+const caption = 'Make an appointment'
+const calendlyBox = document.createElement('div');
+function calendly():string {
+    return html
+        .replace(/{{link}}/, link)
+        .replace(/{{img}}/, img)
+        .replace(/{{caption}}/, caption)
+        .replace(/{{clickFunction}}/,clickCalendly);
+}
+function clickCalendly():any{
+    console.log('click');
+    return 'string'
+}
+console.log(calendly());
+calendlyBox.innerHTML = calendly();
+
+
+// export default calendlyBox.innerHTML;
+export default calendlyBox;
+
 
 /**
  * <!-- Calendly inline widget begin -->

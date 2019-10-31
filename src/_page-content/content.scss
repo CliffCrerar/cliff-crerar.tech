@@ -8,7 +8,17 @@
     .inline-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
+        .page-subject{
+            grid-column: 1;
+        }
+        .social-links{
+            grid-column: 1;
+        }
+        .page-quote{
+            grid-column: 2 / span 2;
+            grid-row: 1 / span 2;
+        }
         // display: flex;
         // flex-flow: row;
         // justify-content: space-around;

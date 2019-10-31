@@ -1,0 +1,35 @@
+.calendly-box{
+    height: 50px;
+}
+.button-caption{
+    font-size: 1.5em;
+}
+
+.calendly-button{
+    position: relative;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0px transparent !important;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding: 0 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    p{
+        margin-right: 10px;
+    }
+}
+
+.calendly-button:hover{
+    background: white;
+    p{
+        // color: black
+    }
+    
+}
+
+.hide-class{
+    display: none;
+}

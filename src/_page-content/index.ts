@@ -11,7 +11,7 @@ const contentPage = content
 	.replace('{{page-subject}}', subject)
 	.replace('{{page-quote}}','<div id="quote"></div>')
 	.replace("{{socialLinks}}", socialLinks)
-	.replace('{{calendly}}', calendly);
+	// .replace('{{calendly}}', calendly);
 
 	//callQuoteApi();
 

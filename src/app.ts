@@ -2,12 +2,14 @@
 /// <reference path="html.d.ts" />
 /// <reference path="svg.d.ts" />
 
+import './__google-analytics/index.js'
 import './nodeMods'
 import './loader';
 import './style.scss';
 import './variables.scss';
 import './showdev/index';
 import './loader';
+
 import {win} from './window';
 import mobileComponents  from './__modbileSite/index';
 import nav from './nav/index'

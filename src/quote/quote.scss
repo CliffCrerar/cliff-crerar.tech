@@ -1,0 +1,23 @@
+.quote {
+    max-width: 414px;
+    margin: auto;
+}
+.quote-text{
+    /* border: 0.5px solid rgba(255, 255, 255, 0.2); */
+    padding: 10px 10px 10px 0;
+    margin: 10px 10px 10px 0;
+    display: flex;
+    
+    span{
+        display: inline;
+        font-size: 1.5em;
+        padding: 0;
+        // line-height: 0;
+    }
+}
+.quote-items small {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.5em;
+}

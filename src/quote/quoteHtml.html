@@ -1,26 +1,19 @@
-<style>
-    .quote {
-        max-width: 414px;
-        margin: auto;
-    }
-    .quote-items small {
-        background: rgba(255, 255, 255, 0.8);
-        padding: 5px 10px;
-        border-radius: 4px;
-    }
-</style>
-<h2>${quoteTitle}</h2>
 <!--<img style="width: 50%" src="${quoteImg}"/>-->
-<blockquote>${quoteText}</blockquote>
-<div class="quoteSmallClass">
-    <div>
-        <a class="name quote-items" href="${permalink}">
-            <small>Author: ${quoteAuthor}</small>
-        </a>
+<blockquote>
+    <!-- <h3>${quoteTitle}</h3> -->
+    <div class="quote-text">
+        <p><span>&#8223;</span>${quoteText}<span>&#8221;</span></p>
     </div>
-    <div>
-        <a class="link quote-items" href="${quoteCopyright}">
-            <small>${quoteCopyright}</small>
-        </a>
+    <div class="quoteSmallClass">
+        <div>
+            <a class="name quote-items" href="${permalink}">
+                <small>Author: ${quoteAuthor}</small>
+            </a>
+        </div>
+        <div>
+            <a class="link quote-items" href="${quoteCopyright}">
+                <small>${quoteCopyright}</small>
+            </a>
+        </div>
     </div>
-</div>
+</blockquote>
