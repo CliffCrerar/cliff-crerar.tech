@@ -6,7 +6,7 @@ export default (main: HTMLElement) => {
 
 // console.log('rButton: ', rButton);
 
-function handleClick(e){
+function handleClick(e: Event){
     console.log(e.target);
     location.href='https://resume.cliff-crerar.tech';
 }
