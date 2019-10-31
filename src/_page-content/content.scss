@@ -6,13 +6,16 @@
 .content-container {
     position: relative;
     .inline-container{
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-content: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        // display: flex;
+        // flex-flow: row;
+        // justify-content: space-around;
+        // align-content: stretch;
         align-items: Center;
         section {
-            min-width: 414px;
+            min-width: 50%;
             &.page-subject {
                 // background: rgba(255, 0, 0, 0.3);
                 flex: 1;
@@ -27,13 +30,15 @@
     }
     .social-links{
         position: relative;
-        margin-top: 5vh;
+        margin: auto;
         ul{
             list-style: none;
-            display: flex;
-            justify-content: space-around;
+            display: grid;
+            width: 40%;
+            grid-template-columns: auto auto auto auto;            
             li{
                 height: auto;
+                margin: 20px;
                 a{
                     height: auto;
                     $dropShad: drop-shadow(5px 5px 2px rgba(0,0,0,0.7));      
