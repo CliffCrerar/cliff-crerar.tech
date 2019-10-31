@@ -6,13 +6,13 @@ export default `
         a:hover p,a:hover img{
             transform: scale(1.2);
         }
-        button{
-            background: transparent;
-            border: 0px transparent;
+        calendly-button{
+            background: transparent !important;
+            border: 0px transparent !important;
         }
     </style>
     <div class="calendly-box">
-    <button>
+    <button class="calendly-button">
         <a href="https://calendly.com/cliff-crerar/session-with-dev" target="blank">
             <img 
             style="height: 100px; width: 100px" 
