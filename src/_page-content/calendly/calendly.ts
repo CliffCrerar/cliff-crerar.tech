@@ -6,6 +6,10 @@ export default `
         a:hover p,a:hover img{
             transform: scale(1.2);
         }
+        button{
+            background: transparent;
+            border: 0px transparent;
+        }
     </style>
     <div class="calendly-box">
     <button>
