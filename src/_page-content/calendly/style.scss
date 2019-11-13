@@ -6,6 +6,7 @@
     font-size: 1.5em;
 }
 
+$buttonPadding : 0 20px;
 .calendly-button {
     position: relative;
     cursor: pointer;
@@ -13,28 +14,30 @@
     border: 0px transparent !important;
     margin-right: 20px;
     border-radius: 4px;
-    padding: 0 20px;
+    padding: $buttonPadding;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-
     p {
         margin-right: 10px;
     }
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6), 5px 5px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.6),
+    5px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .calendly-button:hover {
     background: white;
-
-    p {
-        // color: black
-    }
     box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.6), 5px 5px 8px 10px rgba(0, 0, 0, 0.4);
-
 }
 
 .hide-class {
     display: none;
+}
+
+.powered-by {
+    position: relative;
+    text-align: right;
+    margin: 0;
+    padding: $buttonPadding;
 }

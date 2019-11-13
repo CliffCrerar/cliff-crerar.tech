@@ -8,8 +8,7 @@ function callQuoteApi() {
 			? require('./devapi.json')
 			: fetch('https://quotes.rest/qod').then(resp => resp.json());
 		resolve(apiCall);
-	})
-		.then(quoteObject => populate(quoteObject));
+	}).then(quoteObject => populate(quoteObject));
 
 	function populate(q: any) {
 		const quoteContainer = document.getElementById('quote'),

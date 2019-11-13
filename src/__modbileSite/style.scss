@@ -1,34 +1,33 @@
-main{
+main {
     margin: 0;
     height: 100vh;
     width: 100vw;
     background: url('../_assets/mob-bg.jpeg') top center / 120% auto fixed;
 }
 
-.mobile-container{
+.mobile-container {
     width: 100%;
     text-align: center;
-    h1{
+    h1 {
         text-align: center;
         background: rgba(0, 0, 0, 0.6);
         padding: 3vh;
-        span{
+        span {
             color: red;
         }
     }
-    .info{
+    .info {
         display: flex;
         padding: 5vh;
         height: 100%;
         flex-direction: column;
         justify-content: center;
-        align-content: stretch
-        ;
-        div{
-            flex:1;
+        align-content: stretch;
+        div {
+            flex: 1;
         }
     }
-    .mobile-button{
+    .mobile-button {
         font-size: 2em;
         margin: 50px 3%;
         width: 94%;
@@ -41,10 +40,10 @@ main{
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
-}
+    }
 }
 
-.info-icon{
+.info-icon {
     width: 30%;
     color: white;
 }

@@ -1,10 +1,11 @@
 import './footer.scss';
 
-const terms = "https://policies.cliff-crerar.tech/portal-terms"
-const privacy = "https://policies.cliff-crerar.tech/portal-privacy"
+const
+	terms = "https://policies.cliff-crerar.tech/portal-terms",
+	privacy = "https://policies.cliff-crerar.tech/portal-privacy"
 
 export default () => {
-    return `
+	return `
     <div class="footer">
         <div class="policies-container">
             <span><a class="policies" href="${privacy}" target="_blank">Privacy Policy</a></span>

@@ -1,21 +1,18 @@
-
-
 @import '../../node_modules//@fortawesome/fontawesome-free/scss/fontawesome.scss';
-
 @import '../variables.scss';
 .content-container {
     position: relative;
-    .inline-container{
+    .inline-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        .page-subject{
+        .page-subject {
             grid-column: 1;
         }
-        .social-links{
+        .social-links {
             grid-column: 1;
         }
-        .page-quote{
+        .page-quote {
             grid-column: 2 / span 2;
             grid-row: 1 / span 2;
         }
@@ -38,48 +35,44 @@
             }
         }
     }
-    .social-links{
+    .social-links {
         position: relative;
         margin: auto;
-        ul{
+        ul {
             list-style: none;
             display: grid;
             width: 40%;
-            grid-template-columns: auto auto auto auto;            
-            li{
+            grid-template-columns: auto auto auto auto;
+            li {
                 height: auto;
                 margin: 20px;
-                a{
+                a {
                     height: auto;
-                    $dropShad: drop-shadow(5px 5px 2px rgba(0,0,0,0.7));      
-                    svg{
+                    $dropShad: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+                    svg {
                         height: 7vh;
                         color: $text-accent;
                         -webkit-filter: $dropShad;
                         filter: $dropShad;
-                        &:hover{
+                        &:hover {
                             color: rgb(173, 173, 173);
                             transform: scale(1.2);
                         }
-
                     }
                 }
             }
         }
-
     }
-    .calendly-box{
+    .calendly-box {
         margin-top: 5vh;
         text-align: center;
-        a{
+        a {
             display: block;
-            img:hover{
+            img:hover {
                 transform: scale(1.2);
-
             }
         }
     }
-
 }
 
 .subject {

@@ -1,5 +1,5 @@
 
-import { infoIcon } from './components/infoIcon.ts'
+import { infoIcon } from './components/infoIcon';
 export default (main: HTMLElement) => {
     require('./style.scss');
     console.log('main: ', main);
@@ -10,8 +10,6 @@ function handleClick(e: Event){
     console.log(e.target);
     location.href='https://resume.cliff-crerar.tech';
 }
-
-
     main.innerHTML = `
         <div class="mobile-container">
             <h1><span>Cliff</span> Crerar</h1>

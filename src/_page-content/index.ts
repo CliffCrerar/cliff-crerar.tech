@@ -5,7 +5,7 @@ import content from './content.html';
 import subject from './sub-content/page-subject.html';
 
 import socialLinks from './social-links/index';
-import calendly from './calendly/calendly'
+// import calendly from './calendly/calendly'
 
 const contentPage = content
 	.replace('{{page-subject}}', subject)
