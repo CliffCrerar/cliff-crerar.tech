@@ -75,17 +75,6 @@
     }
 }
 
-.subject {
-    .name {
-        font-family: $font-main;
-        font-size: 3em;
-        letter-spacing: 5px;
-        span {
-            color: $text-accent;
-        }
-    }
-}
-
 .position {
     display: flex;
     flex-flow: row wrap;

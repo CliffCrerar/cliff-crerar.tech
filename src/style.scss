@@ -1,5 +1,4 @@
 // @import url('../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss');
-
 //@import url('https://fonts.googleapis.com/css?family=Alfa Slab One|Allerta Stencil|Averia Libre|DM Sans|DM Serif Display|Damion|Days One|Khand|Mitr|Squada One&display=swap');
 //@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Nanum+Gothic|Prosto+One|Quicksand|Racing+Sans+One&display=swap');
 
@@ -52,7 +51,7 @@ body {
     }
 }
 
-main{
+main {
     margin-top: 7vh;
 }
 
@@ -141,46 +140,15 @@ hr {
 .disabled a {
     pointer-events: none;
     color: rgba(128, 128, 128, 0.5) !important;
-
 }
 
-
-.disabled:hover{
+.disabled:hover {
     cursor: not-allowed !important;
     transform: scale(1) !important;
     -webkit-transform: scale(1) !important;
     -moz-transform: scale(1) !important;
     -ms-transform: scale(1) !important;
     -o-transform: scale(1) !important;
-}
-
-.quoteSmallClass {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.quoteSmallClass a {
-    font-size: 1.2em;
-    display: block;
-    position: relative;
-    color: $primary;
-    width: 100%;
-}
-
-.quoteSmallClass a:hover {
-    color: $text-secondary !important;
-}
-
-.quoteSmallClass .link {
-    text-align: right;
-}
-
-.quoteSmallClass div {
-    position: relative;
-    min-width: 118px;
-    flex: 1;
 }
 
 .nav-links a:hover {

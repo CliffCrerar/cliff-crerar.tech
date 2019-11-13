@@ -2,18 +2,16 @@
 <blockquote>
     <!-- <h3>${quoteTitle}</h3> -->
     <div class="quote-text">
-        <p><span>&#8223;</span>${quoteText}<span>&#8221;</span></p>
+        <p>
+            <span>&#8223;</span class="quote-span">${quoteText}<span>&#8221;</span>
+            <a class="author-name" href="${permalink}" target="_blank">
+                <small>${quoteAuthor}</small>
+            </a>
+        </p>
     </div>
     <div class="quoteSmallClass">
-        <div>
-            <a class="name quote-items" href="${permalink}">
-                <small>Author: ${quoteAuthor}</small>
-            </a>
-        </div>
-        <div>
-            <a class="link quote-items" href="${quoteCopyright}">
-                <small>${quoteCopyright}</small>
-            </a>
-        </div>
+        <a href="${quoteCopyright}" target="_blank">
+            <small>API: ${quoteCopyright}</small>
+        </a>
     </div>
 </blockquote>
