@@ -90,6 +90,14 @@
         flex-direction: column;
         justify-content: flex-start;
     }
+    .name {
+        font-family: Racing Sans One !important;
+        font-size: 3em;
+        letter-spacing: 5px;
+        span {
+            color: $secondary
+        }
+    }
 }
 
 h2,
