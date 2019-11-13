@@ -1,1 +1,24 @@
-{"success":{"total":1},"contents":{"quotes":[{"quote":"Win any way as long as you can get away with it. Nice guys finish last.","length":"71","author":"Leo Durocher","tags":["inspire","tod","winning"],"category":"inspire","date":"2019-07-29","permalink":"https://theysaidso.com/quote/leo-durocher-win-any-way-as-long-as-you-can-get-away-with-it-nice-guys-finish-la","title":"Inspiring Quote of the day","background":"https://theysaidso.com/img/bgs/man_on_the_mountain.jpg","id":"qu_EzW6zDNMQqjK7UR3zdgeF"}],"copyright":"2017-19 theysaidso.com"}}
+{
+    "success": {
+        "total": 1
+    },
+    "contents": {
+        "quotes": [{
+            "quote": "Win any way as long as you can get away with it. Nice guys finish last.",
+            "length": "71",
+            "author": "Leo Durocher",
+            "tags": [
+                "inspire",
+                "tod",
+                "winning"
+            ],
+            "category": "inspire",
+            "date": "2019-07-29",
+            "permalink": "https://theysaidso.com/quote/leo-durocher-win-any-way-as-long-as-you-can-get-away-with-it-nice-guys-finish-la",
+            "title": "Inspiring Quote of the day",
+            "background": "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg",
+            "id": "qu_EzW6zDNMQqjK7UR3zdgeF"
+        }],
+        "copyright": "2017-19 theysaidso.com"
+    }
+}
