@@ -7,7 +7,7 @@ interface iSocialLinks {
 	link: string
 }
 function getImg(imgName: string): string {
-	return require(require('path').join(__dirname, '../../_assets', imgName + '.svg'));
+	return require(require('path').join(__dirname, '../../assets', imgName + '.svg'));
 }
 const
 	baseUrl: string = 'https://cdn-cloudflare.ga/assets/social-icons',
