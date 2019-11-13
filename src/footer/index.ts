@@ -1,5 +1,4 @@
 import './footer.scss';
-
 const
 	terms = "https://policies.cliff-crerar.tech/portal-terms",
 	privacy = "https://policies.cliff-crerar.tech/portal-privacy"

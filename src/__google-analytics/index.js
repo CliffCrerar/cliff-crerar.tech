@@ -1,13 +1,10 @@
-
-
 const scr = document.createElement('script');
 document.head.appendChild(scr);
 
 scr.innerHTML = ga();
 
 function ga() {
-
-    if(process.env.DEV) return;
+    if (process.env.DEV) return;
     return `(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
@@ -22,15 +19,10 @@ function ga() {
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-KRHTS6K');
-
-
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
     gtag('config', 'UA-143913069-1');`
 };
-
-

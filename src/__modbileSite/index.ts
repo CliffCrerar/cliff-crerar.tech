@@ -1,16 +1,17 @@
 
 import { infoIcon } from './components/infoIcon';
+// import {html} from 'lit-html';
 export default (main: HTMLElement) => {
-    require('./style.scss');
-    console.log('main: ', main);
+	require('./style.scss');
+	console.log('main: ', main);
 
-// console.log('rButton: ', rButton);
+	// console.log('rButton: ', rButton);
 
-function handleClick(e: Event){
-    console.log(e.target);
-    location.href='https://resume.cliff-crerar.tech';
-}
-    main.innerHTML = `
+	function handleClick(e: Event) {
+		console.log(e.target);
+		location.href = 'https://resume.cliff-crerar.tech';
+	}
+	main.innerHTML = `
         <div class="mobile-container">
             <h1><span>Cliff</span> Crerar</h1>
             <div class="info">
@@ -23,7 +24,7 @@ function handleClick(e: Event){
                 </div>
             </div>
             <button id="resume-button" class="mobile-button">Resume<button>
-        </div>
+			</div>
     `
-    main.addEventListener('click',handleClick)
+	main.addEventListener('click', handleClick)
 }

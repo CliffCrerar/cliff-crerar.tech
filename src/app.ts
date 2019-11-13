@@ -15,7 +15,7 @@ import mobileComponents from './__modbileSite/index';
 import nav from './nav/index'
 import splitview from "./splitview/index";
 import videobg from './videobg/index';
-import content from './_page-content/index';
+import content from './_content-grid/index';
 import policies from './footer/index';
 import callQuoteApi from './quote/index';
 
