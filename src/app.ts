@@ -1,23 +1,22 @@
 
-/// <reference path="html.d.ts" />
-/// <reference path="svg.d.ts" />
+/// <reference path="modules/html.d.ts" />
+/// <reference path="modules/svg.d.ts" />
 
-import './__google-analytics/index.js'
-import './nodeMods'
-import './loader';
+import './components/__google-analytics/index.js'
+import './utils/nodeMods'
+import './components/loader';
 import './style.scss';
 import './variables.scss';
-import './showdev/index';
-import './loader';
+import './components/showdev/index';
 
-import { win } from './window';
-import mobileComponents from './__modbileSite/index';
-import nav from './nav/index'
-import splitview from "./splitview/index";
-import videobg from './videobg/index';
-import content from './_content-grid/index';
-import policies from './footer/index';
-import callQuoteApi from './quote/index';
+import { win } from './modules/window';
+import mobileComponents from './components/__modbileSite/index';
+import nav from './components/nav/index'
+import splitview from "./components/splitview/index";
+import videobg from './components/videobg/index';
+import content from './components/_content-grid/index';
+import policies from './components/footer/index';
+import callQuoteApi from './components/quote/index';
 
 const $ = document,
 	appendBody = (el: HTMLElement): HTMLElement => $.body.appendChild(el),

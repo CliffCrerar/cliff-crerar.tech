@@ -2,7 +2,7 @@ import './style.scss';
 import html from './calendly.html';
 
 const
-	img = require('../../_assets/calendly3.png'),
+	img = require('../../../_assets/calendly3.png'),
 	link = 'https://calendly.com/cliff-crerar/session-with-dev',
 	caption = 'Make an appointment',
 	calendlyBox = document.createElement('div');
