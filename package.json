@@ -1,12 +1,13 @@
 {
-    "name": "portal-page",
+    "name": "my-portal-page",
     "version": "1.3.0",
     "description": "Gateway to all my web publications",
     "private": true,
     "scripts": {
         "build": "webpack --config webpack.config.js --env.NODE_ENV='production'",
         "now-build": "webpack --config webpack.config.js --env.NODE_ENV=production",
-        "start": "webpack --env.NODE_ENV='development' --watch --config webpack.config.js --show-modules --entry-file='dist'"
+        "start": "webpack --env.NODE_ENV='development' --watch --config webpack.config.js --show-modules --entry-file='dist'",
+        "deploy": "now --prod"
     },
     "repository": {
         "type": "git",

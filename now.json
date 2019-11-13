@@ -1,7 +1,6 @@
 {
     "version": 2,
-    "name": "portal-page",
-    "alias": "cliff-crerar.tech",
+    "name": "my-portal-page",
     "builds": [{
         "src": "package.json",
         "use": "@now/static-build",
