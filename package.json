@@ -36,7 +36,8 @@
         "webpack-cli": "^3.3.10",
         "webpack-dev-middleware": "^3.7.2",
         "webpack-dev-server": "^3.9.0",
-        "webpack-manifest-plugin": "^2.2.0"
+        "webpack-manifest-plugin": "^2.2.0",
+        "copy-webpack-plugin":"*"
     },
     "dependencies": {
         "@types/node": "^12.12.7",
