@@ -74,7 +74,8 @@ module.exports = (env) => {
                 NODE_PATH: ['./', './src'].join(os.platform() === 'win32', ';', ':')
             }),
             new CopyPlugin([
-                      { from: './public/sitemap.xml', to: './dist/sitemap.xml' }
+                      { from: './public/sitemap.xml', to: './dist/sitemap.xml' },
+                        {from:'./api/sitemap.js', to './dist/api/sitemap.js'}
                       // { from: 'other', to: 'public' },
             ])
         ],
