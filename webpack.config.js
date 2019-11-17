@@ -5,7 +5,8 @@ const
     CleanWebpackPlugin = require('clean-webpack-plugin'),
     ManifestPlugin = require('webpack-manifest-plugin'),
     os = require('os'),
-    webpack = require('webpack');
+    webpack = require('webpack'),
+    CopyPlugin = require('copy-webpack-plugin');
 
 console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
 
@@ -71,7 +72,11 @@ module.exports = (env) => {
             new webpack.EnvironmentPlugin({
                 DEV: development,
                 NODE_PATH: ['./', './src'].join(os.platform() === 'win32', ';', ':')
-            })
+            }),
+            new CopyPlugin([
+                      { from: './public/sitemap.xml', to: './dist/sitemap.xml' }
+                      // { from: 'other', to: 'public' },
+            ])
         ],
         output: {
             filename: '[name].source.js',
