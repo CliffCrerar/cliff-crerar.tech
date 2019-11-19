@@ -21,8 +21,8 @@ process.env.DEV && console.log(calendly());
 calendlyBox.innerHTML = calendly();
 
 
-export default calendlyBox.innerHTML;
-// export default calendlyBox;
+// export default calendlyBox.innerHTML;
+export default calendlyBox;
 
 
 /**
