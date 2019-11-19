@@ -4,8 +4,8 @@ document.head.appendChild(scr);
 scr.innerHTML = ga();
 
 function ga() {
-    if (process.env.DEV) return;
-    return `(function (w, d, s, l, i) {
+	if (process.env.DEV) return;
+	return `(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
             'gtm.start': new Date().getTime(),

@@ -2,13 +2,13 @@
  * XML Page schema for crawling
  */
 
-const scr = document.createElement('script')
-scr.type = 'application/ld+json';
-document.head.appendChild(scr);
-scr.innerHTML = schema();
+const schemaScript = document.createElement('script')
+schemaScript.type = 'application/ld+json';
+document.head.appendChild(schemaScript);
+schemaScript.innerHTML = schema();
 function schema() {
 	if (process.env.DEV) return;
-	return scr.innerText = `{ 
+	return schemaScript.innerText = `{ 
   "@context": "http://schema.org",
   "@type": "Person",
   "birthDate":"1984-05-21",
