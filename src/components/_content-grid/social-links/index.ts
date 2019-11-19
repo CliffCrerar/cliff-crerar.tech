@@ -2,16 +2,16 @@
  * Social links
  */
 import icons from './icons'
-import  { iSocialLinks, socialLinks, linksContainer, list } from './elements';
-function buildLink(itm: iSocialLinks, idx: number):HTMLLIElement{
-    const listItem: HTMLLIElement = document.createElement('li');
-    const link: HTMLAnchorElement = document.createElement('a');
-    link.href = itm.link;
-    link.target = '_blank';
-    link.innerHTML = <string>icons[itm.name];
-    listItem.appendChild(link);
-    return listItem;
+import { iSocialLinks, socialLinks, linksContainer, list } from './elements';
+function buildLink(itm: iSocialLinks, idx: number): HTMLLIElement {
+	const listItem: HTMLLIElement = document.createElement('li');
+	const link: HTMLAnchorElement = document.createElement('a');
+	link.href = itm.link;
+	link.target = '_blank';
+	link.innerHTML = <string>icons[itm.name];
+	listItem.appendChild(link);
+	return listItem;
 }
 linksContainer.appendChild(list);
-socialLinks.map((itm, idx) => buildLink(itm, idx)).forEach(itm=>list.appendChild(itm));
+socialLinks.map((itm, idx) => buildLink(itm, idx)).forEach(itm => list.appendChild(itm));
 export default linksContainer.innerHTML;

@@ -2,7 +2,8 @@
 /// <reference path="modules/html.d.ts" />
 /// <reference path="modules/svg.d.ts" />
 
-import './components/__google-analytics/index.js'
+import './components/__google-analytics/index.js';
+import './components/__schema';
 import './utils/nodeMods'
 import './components/loader';
 import './style.scss';

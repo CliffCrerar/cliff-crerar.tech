@@ -1,145 +1,174 @@
-@import '../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
-@import '../../variables.scss';
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../variables.scss";
 .content-container {
-    position: relative;
-    .inline-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        .page-subject {
-            grid-column: 1;
-        }
-        .social-links {
-            grid-column: 1;
-        }
-        .page-quote {
-            grid-column: 2 / span 2;
-            grid-row: 1 / span 2;
-        }
-        // display: flex;
-        // flex-flow: row;
-        // justify-content: space-around;
-        // align-content: stretch;
-        align-items: Center;
-        section {
-            min-width: 50%;
-            &.page-subject {
-                // background: rgba(255, 0, 0, 0.3);
-                flex: 1;
-                padding: 0 10vw;
-            }
-            &.page-quote {
-                // background: rgba(0, 128, 0, 0.3);
-                padding: 0 10vw;
-                flex: 1;
-            }
-        }
+  position: relative;
+  .inline-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    .page-subject {
+      grid-column: 1;
     }
     .social-links {
-        position: relative;
-        margin: auto;
-        ul {
-            list-style: none;
-            display: grid;
-            width: 40%;
-            grid-template-columns: auto auto auto auto;
-            li {
-                height: auto;
-                margin: 20px;
-                a {
-                    height: auto;
-                    $dropShad: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
-                    svg {
-                        height: 7vh;
-                        color: $text-accent;
-                        -webkit-filter: $dropShad;
-                        filter: $dropShad;
-                        &:hover {
-                            color: rgb(173, 173, 173);
-                            transform: scale(1.2);
-                        }
-                    }
-                }
-            }
-        }
+      grid-column: 1;
     }
-    .calendly-box {
-        margin-top: 5vh;
-        text-align: center;
+    .page-quote {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 2;
+    }
+    // display: flex;
+    // flex-flow: row;
+    // justify-content: space-around;
+    // align-content: stretch;
+    align-items: Center;
+    section {
+      min-width: 50%;
+      &.page-subject {
+        // background: rgba(255, 0, 0, 0.3);
+        flex: 1;
+        padding: 0 10vw;
+      }
+      &.page-quote {
+        // background: rgba(0, 128, 0, 0.3);
+        padding: 0 10vw;
+        flex: 1;
+      }
+    }
+  }
+  .social-links {
+    position: relative;
+    margin: auto;
+    ul {
+      list-style: none;
+      display: grid;
+      width: 40%;
+      grid-template-columns: auto auto auto auto;
+      li {
+        height: auto;
+        margin: 20px;
         a {
-            display: block;
-            img:hover {
-                transform: scale(1.2);
+          height: auto;
+          $dropShad: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.7));
+          svg {
+            height: 7vh;
+            color: $text-accent;
+            -webkit-filter: $dropShad;
+            filter: $dropShad;
+            &:hover {
+              color: rgb(173, 173, 173);
+              transform: scale(1.2);
             }
+          }
         }
+      }
     }
+  }
+  .calendly-box {
+    margin-top: 5vh;
+    text-align: center;
+    a {
+      display: block;
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
 
 .position {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 100%;
+    width: auto;
+    margin: 0 5px 0 0;
+  }
+  div {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    img {
-        height: 100%;
-        width: auto;
-        margin: 0 5px 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .name {
+    font-family: Racing Sans One !important;
+    font-size: 3em;
+    letter-spacing: 5px;
+    span {
+      color: $secondary;
     }
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .name {
-        font-family: Racing Sans One !important;
-        font-size: 3em;
-        letter-spacing: 5px;
-        span {
-            color: $secondary
-        }
-    }
+  }
 }
 
 h2,
 h3,
 h4 {
-    font-family: $font-sub-headings;
+  font-family: $font-sub-headings;
 }
 
 .page-quote {
-    padding: 0 5vw 0 0vw;
+  padding: 0 5vw 0 0vw;
 }
 
 @media only screen and (max-width: 414px) {
-    .content-container {
-        flex-flow: row wrap;
+  .content-container {
+    flex-flow: row wrap;
+  }
+  &.page-subject {
+    position: relative;
+    // background: rgba(255, 0, 0, 0.3);
+    flex: none;
+    padding: 0 0;
+    transform: scale(0.7);
+  }
+  .page-quote {
+    transform: scale(0.7);
+    p {
+      text-align: center;
+      transform: scale(1.7);
     }
-    &.page-subject {
-        position: relative;
-        // background: rgba(255, 0, 0, 0.3);
-        flex: none;
-        padding: 0 0;
-        transform: scale(0.7);
+  }
+  .quote {
+    &h1 {
+      word-wrap: break-word;
+      font-size: 1em !important;
     }
-    .page-quote {
-        transform: scale(0.7);
-        p {
-            text-align: center;
-            transform: scale(1.7);
-        }
+  }
+  .position {
+    display: block;
+    position: relative;
+    width: auto;
+    h2 {
+      word-wrap: break-word;
     }
-    .quote {
-        &h1 {
-            word-wrap: break-word;
-            font-size: 1em !important;
-        }
-    }
-    .position {
-        display: block;
-        position: relative;
-        width: auto;
-        h2 {
-            word-wrap: break-word;
-        }
-    }
+  }
+}
+
+.company-logo {
+  opacity: 0;
+  flex: 0;
+  position: relative;
+  left: -3rem;
+  width: 0;
+  p {
+    font-family: $font-sub-text;
+    font-size: 1.2em;
+    margin: 0;
+  }
+  //   transform: translateY(-50%);
+  //   -webkit-transform: translateY(-50%);
+  //   -moz-transform: translateY(-50%);
+  //   -ms-transform: translateY(-50%);
+  //   -o-transform: translateY(-50%);
+  //   left: -105%;
+}
+
+.bbd-anchor {
+  position: relative;
+}
+
+.bbd-anchor:hover {
+  &.company-logo {
+    opacity: 1 !important;
+  }
 }
