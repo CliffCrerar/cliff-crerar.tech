@@ -13,13 +13,14 @@ function callQuoteApi() {
 	function populate(q: any) {
 		const quoteContainer = document.getElementById('quote'),
 			quote = q.contents.quotes[0],
-			quoteCopyright = q.contents.copyright,
+			quoteCopyright = [q.copyright.year, 'They Said So®'].join(' '),
 			quoteTitle = quote.title,
 			quoteImg = quote.background,
 			quoteText = quote.quote,
 			quoteAuthor = quote.author,
 			permalink = quote.permalink,
 			quoteHtml = require('./quoteHtml.html')
+			.replace(/\${quoteCopyrightUrl}/gi, q.copyright.url)
 				.replace(/\${quoteCopyright}/gi, quoteCopyright)
 				.replace('${quoteTitle}', quoteTitle)
 				.replace('${quoteImg}', quoteImg)
