@@ -9,11 +9,11 @@ const
 	CopyPlugin = require('copy-webpack-plugin');
 
 console.log('process.env.NODE_ENV: ', process.env.NODE_ENV);
-module.exports = (env) => {
-	console.log('env', env);
-	const development = env.NODE_ENV === 'development'
-	return {
-		mode: config.mode,
+module.exports ={
+	
+	// const development = env.NODE_ENV === 'development'
+	
+		mode: 'development',
 		entry: path.resolve(__dirname, config.Directories.entry),
 		devtool: 'inline-source-map',
 		module: {
@@ -67,9 +67,9 @@ module.exports = (env) => {
 			new webpack.HotModuleReplacementPlugin({
 				// Options...
 			}),
-			new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(env.NODE_ENV) }),
+			new webpack.DefinePlugin({ 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) }),
 			new webpack.EnvironmentPlugin({
-				DEV: development,
+				DEV: this.mode,
 				NODE_PATH: ['./', './src'].join(os.platform() === 'win32', ';', ':')
 			}),
 			new CopyPlugin([
@@ -83,5 +83,5 @@ module.exports = (env) => {
 			path: path.resolve(__dirname, 'dist'),
 			publicPath: config.publicPath
 		}
-	}
+	
 };
