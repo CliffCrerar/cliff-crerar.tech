@@ -7,5 +7,9 @@
     },
     "publicPath": "/",
     "mode": "development",
-    "Global Variables": []
+    "Global Variables": [],
+    "features-active":{
+        "drift":true,
+        "calendly":true
+    }
 }
