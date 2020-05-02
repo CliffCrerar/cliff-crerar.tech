@@ -79,7 +79,7 @@ module.exports ={
 			])
 		],
 		output: {
-			filename: '[name].source.js',
+			filename: '[name].source.[hash].js',
 			path: path.resolve(__dirname, 'dist'),
 			publicPath: config.publicPath
 		}

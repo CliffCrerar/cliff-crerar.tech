@@ -46,20 +46,15 @@ function desktop(): void {
 	main.prepend(content());
 	footer.innerHTML = policies();
 	callQuoteApi();
-}
-
-function mobile(main: HTMLElement) {
-	return mobileComponents(main);
-}
+} 
 
 // console.log('win.isMobile: ', win.isMobile);
 if (win.isMobile) {
 	process.env.DEV && console.log('load mobile');
-	mobile(main)
+	mobileComponents(main)
 } else {
 	process.env.DEV && console.log('load Desktop');
 	desktop();
 }
-
 
 console.log();
