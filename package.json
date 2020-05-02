@@ -1,5 +1,5 @@
 {
-	"name": "my-portal-page",
+	"name": "cliff-crerar.tech",
 	"version": "1.4.0",
 	"description": "Gateway to all my web publications",
 	"private": true,
@@ -12,11 +12,11 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/CliffCrerar/my-portal-page.git"
+		"url": "git+https://github.com/CliffCrerar/cliff-crerar.tech.git"
 	},
 	"author": "Cliff Crerar",
 	"license": "MIT",
-	"homepage": "https://github.com/CliffCrerar/fonts_evaluation#readme",
+	"homepage": "https://github.com/CliffCrerar/cliff-crerar.tech#readme",
 	"devDependencies": {
 		"clean-webpack-plugin": "^2.0.1",
 		"copy-webpack-plugin": "*",
