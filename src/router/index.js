@@ -1,4 +1,3 @@
-import Router from './router';
-import Link from './router-link';
 
-export { Router, Link };
+
+export { Router, Link } from './src';

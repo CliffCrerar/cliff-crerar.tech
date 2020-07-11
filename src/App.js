@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Link navTo="/">PageOne</Link>
-      <Link navTo="page-two">PageTwo</Link>
+      <Link navTo="page3-two">PageTwo</Link>
       <Link navTo="page-three">PageThree</Link>
       <Router>
         <PageOne route="/" />
