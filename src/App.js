@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { PageOne, PageTwo, PageThree } from './pages';
+import { Link ,Router} from './router';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Link navTo="/">PageOne</Link>
+      <Link navTo="page-two">PageTwo</Link>
+      <Link navTo="page-three">PageThree</Link>
+      <Router>
+        <PageOne route="/" />
+        <PageTwo route="page-two" />
+        <PageThree route="page-three" />
+      </Router>
     </div>
   );
 }
