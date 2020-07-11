@@ -5,9 +5,10 @@ import propTypes from 'prop-types';
 import React, { useState } from 'react';
 import PageNotFound from './404';
 function Router(props) {
-    const [currentRoute, setNewRoute] = useState('/');
+    const [currentRoute, setNewRoute] = useState(window.location.pathname);
     window.setNewRoute = setNewRoute;
     try {
+
         const Page = props.children.filter(child => child.props.route == currentRoute)[0];
         if(!Page){
             return <PageNotFound route={currentRoute}/>

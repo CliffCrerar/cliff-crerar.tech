@@ -3,24 +3,26 @@
  */
 import React from 'react';
 import propTypes from 'prop-types'
-function Link({ navTo, children }) {
+function Link({ href, children ,className}) {
     function clickAnchor(ev) {
         ev.persist();
         ev.preventDefault();
         ev.stopPropagation();
-        window.setNewRoute(navTo);
-        window.history.replaceState({ name: '' }, '', navTo.toString())
+        window.setNewRoute(href);
+        window.history.replaceState({ name: '' }, '', href.toString())
     }
-    return <a onClick={ev => clickAnchor(ev)} href="{navTo}">{children}</a>;
+    return <a className={className} onClick={ev => clickAnchor(ev)} href="{href}">{children}</a>;
 }
 
 Link.prototypes = {
     navTo: propTypes.string,
-    children: propTypes.array
+    children: propTypes.array,
+    className: propTypes.string
 }
 Link.defaultProps = {
     navTo: '/',
-    children: null
+    children: null,
+    className: null
 }
 
 export default Link;

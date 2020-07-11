@@ -1,20 +1,31 @@
 import React from 'react';
-import './App.css';
-import { PageOne, PageTwo, PageThree } from './pages';
-import { Link ,Router} from './router';
+import './App.scss';
+import { PageOne, PageTwo, PageThree, Demo } from './pages';
+import { Link, Router } from './router';
+import {NavBar} from './components/navbar';
+
+// const container = window !== undefined ? () => window().document.body : undefined;
 
 function App() {
+
+  const classes = {
+    width: '300px'
+  }
+
   return (
-    <div className="App">
-      <Link navTo="/">PageOne</Link>
-      <Link navTo="page3-two">PageTwo</Link>
-      <Link navTo="page-three">PageThree</Link>
-      <Router>
-        <PageOne route="/" />
-        <PageTwo route="page-two" />
-        <PageThree route="page-three" />
-      </Router>
-    </div>
+    <React.Fragment>
+      <div className="App">
+
+        <NavBar/>
+
+        <Router>
+          <Demo route="demo" />
+          <PageOne route="/" />
+          <PageTwo route="page-two" />
+          <PageThree route="page-three" />
+        </Router>
+      </div>
+    </React.Fragment>
   );
 }
 
