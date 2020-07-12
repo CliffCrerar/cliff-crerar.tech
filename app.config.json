@@ -11,5 +11,6 @@
     "features-active":{
         "drift":true,
         "calendly":true
-    }
+    },
+    "resume":"https://cdn-cloudflare.ga/resume/Resume-Cliff-Crerar.pdf"
 }
