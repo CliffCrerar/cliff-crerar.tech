@@ -8,7 +8,8 @@
 		"build": "webpack --config webpack.config.js --env.NODE_ENV='production'",
 		"now-build": "webpack --config webpack.config.js --env.NODE_ENV=production",
 		"start": "webpack --env.NODE_ENV='development' --watch --config webpack.config.js --show-modules --entry-file='dist'",
-		"deploy": "now --prod"
+		"deploy":"aws s3 cp dist s3://cliffcrerar.dev  --recursive --profile personal-cli"
+		
 	},
 	"repository": {
 		"type": "git",
