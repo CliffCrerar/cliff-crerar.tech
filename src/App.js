@@ -17,12 +17,14 @@ function App() {
       <div className="App">
 
         <NavBar/>
+        <div style={{height: 59}}></div>
 
         <Router>
           <Demo route="demo" />
           <PageOne route="/" />
           <PageTwo route="page-two" />
           <PageThree route="page-three" />
+          <PageThree route="page-404" />
         </Router>
       </div>
     </React.Fragment>
