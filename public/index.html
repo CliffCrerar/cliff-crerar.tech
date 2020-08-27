@@ -1,131 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Start of Async Drift Code -->
-<script>
-	// "use strict";
-    // !function() {
-    // var t = window.driftt = window.drift = window.driftt || [];
-    // if (!t.init) {
-    //     if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    //     t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    //     t.factory = function(e) {
-    //     return function() {
-    //         var n = Array.prototype.slice.call(arguments);
-    //         return n.unshift(e), t.push(n), t;
-    //     };
-    //     }, t.methods.forEach(function(e) {
-    //     t[e] = t.factory(e);
-    //     }), t.load = function(t) {
-    //     var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-    //     o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-    //     var i = document.getElementsByTagName("script")[0];
-    //     i.parentNode.insertBefore(o, i);
-    //     };
-    // }
-    // }();
-    // drift.SNIPPET_VERSION = '0.3.1';
-    // drift.load('addcn2hpbitp');
-</script>
-<!-- End of Async Drift Code -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Ionic App</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Cliff Crerar Portal</title>
-	<meta name="referrer" content="no-referrer" />
-	<meta name="description" content="Software and cloud solutions is my game">
-	<meta name="author" content="Cliff Crerar">
-	<meta name="service" content="Freelancer">
-	<meta name="service" content="Javascript dotnet">
-	<meta name="service" content="cloud architecture">
-	<style>
-		@import url('https://fonts.googleapis.com/css?family=Oswald|Khand|Racing+Sans+One&display=swap');
-	</style>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143913069-1"></script>
-	<!-- Calendly inline widget begin -->
+    <base href="/" />
 
-	<!-- <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> -->
-	<!-- Calendly inline widget end -->
-	<!-- Open Graph data -->
-	<meta property="og:title" content="Cliff Crerar" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="http://www.cliff-crerar.tech" />
-	<meta property="og:image" content="https://personal-logo.now.sh/logosmallest.png" />
-	<meta property="og:description" content="Software and cloud solutions is my game" />
-	<meta name="google-site-verification" content="51VtZGI7RZSUbaOnf6rgGQ8glGdxEbzny-vLIKnbBwg" />
-    <meta name="p:domain_verify" content="88d45a4c0fa08c2d5ab8600eea89efc8"/>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143913069-1"></script>
-	<script src="https://cdn-cloudflare.ga/assets/JavaScript/_isMobile.js"></script>
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
 
-	<!-- Google Tag Manager  this is injected-->
-	<script>
-		(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({
-					'gtm.start': new Date().getTime(),
-					event: 'gtm.js'
-				});
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != 'dataLayer' ? '&l=' + l : '';
-				j.async = true;
-				j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-KRHTS6K');
-	</script>
-	<!--End Google Tag Manager -->
-	<script>
-		window.dataLayer = window.dataLayer || [];
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'UA-143913069-1');
-	</script>
-	
-	<script>
-		// (adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-    <style>
-    .addsbygoogle{
-        position: absolute;
-        z-index: 100000;
-        height: 200px;
-        width: 200px;
-    }
-    </style>
-</head>
+    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
 
-<body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- cliff-crerar.tech -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8086536878743537"
-     data-ad-slot="6651342833"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-    //  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-	<!-- ADS -->
-	<div id="add1" class="addsbygoogle">
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ionic App" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  </head>
 
-	</div>
-	<!-- ADS -->
-	<div id="page-loader"></div>
-	<div>
-		<!--  -->
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
-		<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d2d2f0179caad2d">
-		</script> -->
-	</div>
-
-</body>
+  <body>
+    <div id="root"></div>
+  </body>
 
 </html>
