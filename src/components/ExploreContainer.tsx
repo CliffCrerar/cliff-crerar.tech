@@ -22,7 +22,7 @@ const SocialLinks = function () {
       { name: 'instagram', link: 'https://www.instagram.com/cliffenator/', src: '' },
       { name: 'pinterest', link: 'https://za.pinterest.com/cliffcrerar/', src: '' }
     ].map(item => {
-      const imgSrc = `https://raw.githubusercontent.com/CliffCrerar/cliff-crerar.tech/master/src/assets/${item.name}.svg`
+      const imgSrc = `https://raw.githubusercontent.com/CliffCrerar/cliff-crerar.tech/V1.4.4/src/assets/${item.name}.svg`
       return (
         <div key={'el-' + item.name} className="">
           <IonRouterLink href={item.link}>
