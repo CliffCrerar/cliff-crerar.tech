@@ -1,0 +1,15 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cliffcrerartech-prod-231630-authRole",
+            "UnauthRoleArn": "arn:aws:iam::934233583059:role/amplify-cliffcrerartech-prod-231630-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::934233583059:role/amplify-cliffcrerartech-prod-231630-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-cliffcrerartech-prod-231630-deployment",
+            "UnauthRoleName": "amplify-cliffcrerartech-prod-231630-unauthRole",
+            "StackName": "amplify-cliffcrerartech-prod-231630",
+            "StackId": "arn:aws:cloudformation:eu-west-1:934233583059:stack/amplify-cliffcrerartech-prod-231630/96800c80-e8aa-11ea-93a1-0aa806e28382",
+            "AmplifyAppId": "d349xt508fjbb6"
+        }
+    }
+}
