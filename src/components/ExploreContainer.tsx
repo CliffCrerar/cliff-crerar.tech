@@ -71,7 +71,6 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
          <IonCard className="ion-card">
         {/* <IonCardContent> */}
         <iframe style={{
-          background: 'white',
           border: '0px',
           height: '250px',
           width: '290px',
