@@ -36,7 +36,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
 
-      <IonCard className="ion-card">
+      <IonCard style={{marginTop: '140px'}} className="ion-card ion-margin-vertical">
         <IonCardHeader>
           <IonCardTitle>
             <strong>503</strong>
@@ -68,16 +68,17 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
       </IonCard>
 
       <div className="text-center">
-        {/* <IonCard className="ion-card"> */}
+         <IonCard className="ion-card">
         {/* <IonCardContent> */}
         <iframe style={{
-          border: '0px transparent',
+          background: 'white',
+          border: '0px',
           height: '250px',
           width: '290px',
           margin: 'auto'
         }} title="linkedIn Profile" src="https://s3.eu-west-2.amazonaws.com/cdn-cloudflare.ga/assets/html-frames/linkedin-badges/small.html"></iframe>
         {/* </IonCardContent> */}
-        {/* </IonCard> */}
+         </IonCard>
       </div>
 
     </div>
