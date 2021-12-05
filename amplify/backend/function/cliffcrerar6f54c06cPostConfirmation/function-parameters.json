@@ -1,0 +1,18 @@
+{
+  "trigger": true,
+  "modules": [
+    "add-to-group"
+  ],
+  "parentResource": "cliffcrerar6f54c06c",
+  "functionName": "cliffcrerar6f54c06cPostConfirmation",
+  "resourceName": "cliffcrerar6f54c06cPostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "cliffcrerar6f54c06cPostConfirmation",
+  "skipEdit": true,
+  "GROUP": "Default",
+  "enableCors": false
+}

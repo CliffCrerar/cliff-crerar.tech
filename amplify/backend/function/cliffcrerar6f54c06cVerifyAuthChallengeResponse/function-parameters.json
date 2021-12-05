@@ -1,0 +1,18 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-verify"
+  ],
+  "parentResource": "cliffcrerar6f54c06c",
+  "functionName": "cliffcrerar6f54c06cVerifyAuthChallengeResponse",
+  "resourceName": "cliffcrerar6f54c06cVerifyAuthChallengeResponse",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/snapshot/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/VerifyAuthChallengeResponse",
+  "triggerTemplate": "VerifyAuthChallengeResponse.json.ejs",
+  "triggerEventPath": "VerifyAuthChallengeResponse.event.json",
+  "roleName": "cliffcrerar6f54c06cVerifyAuthChallengeResponse",
+  "skipEdit": true,
+  "RECAPTCHASECRET": "6LdqK-0cAAAAAGck6-5heKlKT93fNFTbu5OEpcyU",
+  "enableCors": false
+}
