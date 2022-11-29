@@ -1,15 +1,30 @@
 {
-  "name": "cliffcrerar.tech",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cliff-crerar.tech",
+  "version": "2.0.0",
+  "description": "my personal web site",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CliffCrerar/cliff-crerar.tech.git"
+  },
+  "author": {"name":"Cliff Crerar","email":"me@cliffcrerar.tech"},
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CliffCrerar/cliff-crerar.tech/issues"
+  },
+  "homepage": "https://github.com/CliffCrerar/cliff-crerar.tech#readme",
   "dependencies": {
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^13.0.5",
+    "nextra": "^1.1.0",
+    "nextra-theme-blog": "^0.1.6",
+    "nextra-theme-docs": "^1.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
