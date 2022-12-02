@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^15.0.2",
+    "@angular-eslint/eslint-plugin": "^15.1.0",
+    "@angular-eslint/template-parser": "^15.1.0",
     "@angular/cli": "^15.0.2",
     "@angular/compiler-cli": "^15.0.2",
     "@types/jasmine": "~4.0.0",

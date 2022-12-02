@@ -1,0 +1,95 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"ignorePatterns": [
+		"projects/**/*"
+	],
+	"overrides": [
+		{
+			"files": [
+				"*.ts"
+			],
+			"parserOptions": {
+				"project": [
+					"tsconfig.json"
+				],
+				"createDefaultProgram": true
+			},
+			"extends": [
+				"eslint:recommended",
+				"plugin:@angular-eslint/recommended",
+				"plugin:@angular-eslint/template/process-inline-templates",
+				"plugin:@typescript-eslint/eslint-recommended",
+				"plugin:@typescript-eslint/recommended"
+			],
+			"rules": {
+				"object-curly-spacing": [
+					"error",
+					"always"
+				],
+				"comma-dangle": [
+					"error",
+					"never"
+				],
+				"comma-spacing": [
+					"error",
+					{
+						"before": false,
+						"after": true
+					}
+				],
+				"quotes": [
+					"error",
+					"single"
+				],
+				"template-curly-spacing": [
+					"error",
+					"always"
+				],
+				"array-bracket-newline": "off",
+				"array-bracket-spacing": [
+					"error",
+					"always"
+				],
+				"@angular-eslint/directive-selector": [
+					"error",
+					{
+						"type": "attribute",
+						"prefix": "lib",
+						"style": "camelCase"
+					}
+				],
+				"@angular-eslint/component-selector": [
+					"error",
+					{
+						"type": "element",
+						"prefix": "app",
+						"style": "kebab-case"
+					}
+				]
+			}
+		},
+		{
+			"files": [
+				"*.html"
+			],
+			"extends": [
+				"plugin:@angular-eslint/template/recommended"
+			],
+			"parser": "angular",
+			"rules": {
+				"indent": [
+					"error",
+					"tab"
+				],
+				"quotes": [
+					"error",
+					"single"
+				]
+			}
+		}
+	]
+}
